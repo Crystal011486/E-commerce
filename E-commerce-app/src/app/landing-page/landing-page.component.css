@@ -1,0 +1,29 @@
+body{
+  background-color: cadetblue;
+}
+
+img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+h1
+{
+  font-family: 'Playfair Display', serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+.image-container {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
