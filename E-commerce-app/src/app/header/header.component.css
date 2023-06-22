@@ -1,26 +1,40 @@
 nav {
-  background-color: #333; /* Set the background color */
+  background-color:#FBBC14;
 }
 
 nav ul {
-  list-style-type: none; /* Remove the bullet points */
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
 nav ul li {
-  float: right; /* Float the list items horizontally */
+  float: left; 
+  font-family: Lucida Calligraphy;
+  font-size: large;
+  font-display: center;
+  font-weight: bolder;
 }
 
 nav ul li a {
-  display: block; /* Display the links as blocks */
-  color: #fff; /* Set the link text color */
+  display: block; 
+  color: rgb(35, 72, 35); 
   text-align: center;
-  padding: 14px 16px; /* Add some padding around the links */
+  padding: 14px 16px;
   text-decoration: none;
+  margin-bottom: auto;
 }
 
 nav ul li a:hover {
-  background-color: #555; /* Set the background color on hover */
+  background-color: #FE8B10;
+}
+
+img {
+  padding: 10px ;
+  width: 120px;
+  float: center;
+}
+svg{
+  margin-right: 100px;
 }

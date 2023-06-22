@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MockDataService } from './mock-data.service';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MockDataService } from './mock-data.service';
     LandingPageComponent,
     HomeComponent,
     FooterComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
