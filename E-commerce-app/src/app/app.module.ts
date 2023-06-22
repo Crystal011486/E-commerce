@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     ProductsComponent,
     HomeComponent
-
   ],
   imports: [
     BrowserModule,
