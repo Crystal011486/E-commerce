@@ -1,0 +1,23 @@
+
+img{
+  width: 100%;
+  height: 250px;
+}
+.pricing-header {
+  background-color: #fbbc14;
+}
+.card.container {
+  margin-top: 10px;
+  background-color: #42abae;
+}
+.row-cols-1{
+  background-color:#42abae;
+  padding-top: 20px;
+}
+body {
+  background-color: #0d9ba3;;
+}
+
+.card-header{
+  background-color:#edeaeb;
+ }
