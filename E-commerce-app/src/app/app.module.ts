@@ -14,10 +14,10 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     ProductsComponent,
+    HomeComponent,
     LandingPageComponent,
     HomeComponent,
     FooterComponent
-
   ],
   imports: [
     BrowserModule,
