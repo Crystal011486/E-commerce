@@ -1,0 +1,21 @@
+body {
+background-color: cadetblue;
+}
+img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.col-lg-6 {
+color: white;
+}
