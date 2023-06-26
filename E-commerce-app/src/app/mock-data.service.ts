@@ -30,7 +30,7 @@ export class MockDataService {
 
       { id:4,
       Name: 'Chocolate Cupcakes',
-      Description: '12 pcs. custom chocolate1 cupcakes. Moist and soft chocolate cupcakes topped with vanilla buttercream frosting',
+      Description: '12 pcs. custom chocolate cupcakes. Moist and soft chocolate cupcakes topped with vanilla buttercream frosting',
       Price: '380.00',
       imageUrl:'/assets/images/cupcakes/chocolate-cupcakes.jpg',
       Type: 'Cupcake'

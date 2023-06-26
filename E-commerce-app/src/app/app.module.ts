@@ -11,9 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MockDataService } from './mock-data.service';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { SearchComponent } from './search/search.component';
 import { FilterComponent } from './filter/filter.component';
 import { FormsModule } from '@angular/forms';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +26,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     AboutUsComponent,
     ErrorPageComponent,
-    SearchComponent,
-    FilterComponent
+    FilterComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

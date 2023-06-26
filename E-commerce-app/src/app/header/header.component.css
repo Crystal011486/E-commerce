@@ -10,7 +10,7 @@ nav ul {
 }
 
 nav ul li {
-  float: left; 
+  float: left;
   font-family: Lucida Calligraphy;
   font-size: large;
   font-display: center;
@@ -18,8 +18,8 @@ nav ul li {
 }
 
 nav ul li a {
-  display: block; 
-  color: rgb(35, 72, 35); 
+  display: block;
+  color: rgb(35, 72, 35);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -31,10 +31,14 @@ nav ul li a:hover {
 }
 
 img {
-  padding: 10px ;
-  width: 120px;
+  margin-left: 80px;
+  padding-top: 2px ;
+  padding-bottom: 1px;
+  width: 153px;
   float: center;
 }
 svg{
-  margin-right: 100px;
+  margin-right: 25px;
+  margin-top: 17px;
+  float: right;
 }
