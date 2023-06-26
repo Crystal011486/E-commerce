@@ -1,0 +1,27 @@
+<div class="filter-container">
+  <span>Filter: </span>
+
+  <input type="radio" name="filter" value="All"
+  [(ngModel)]="selectedRadioButtonValue"
+  (change)=" onRadioButtonSelection()" />
+  <span> {{'All Products('+all+')'}}</span>
+
+  <input type="radio" name="filter" value="Cake"
+  [(ngModel)]="selectedRadioButtonValue"
+  (change)="onRadioButtonSelection()" />
+  <span> {{'Cakes('+cake+')'}}</span>
+
+  <input type="radio" name="filter" value="Cupcake"
+  [(ngModel)]="selectedRadioButtonValue"
+  (change)="onRadioButtonSelection()" />
+  <span> {{'Cupcakes('+cupcake+')'}}</span>
+
+  <input type="radio" name="filter" value="Baked Goods"
+  [(ngModel)]="selectedRadioButtonValue"
+  (change)="onRadioButtonSelection()" />
+  <span> {{'Baked Goods('+bakedGoods+')'}}</span>
+
+  <input type="radio" name="filter" value="Seasonal offers"
+  [(ngModel)]="selectedRadioButtonValue"
+  (change)="onRadioButtonSelection()" />
+  <span> {{'Seasonal Offers('+seasonalOffers+')'}}</span>

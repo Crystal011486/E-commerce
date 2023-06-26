@@ -3,9 +3,21 @@
   <h1 class="display-4 fw-normal text-body-emphasis">Our Product Offerings</h1>
   <p class="fs-5 text-body-secondary">Here's a selection of our delectable products from cakes, cupcakes, baked goods and customizable baked items.</p>
 </div>
-<div class="card container">
+<app-search></app-search>
+<app-filter
+[all]="getTotalProducts()"
+[cake]="getTotalCake()"
+[cupcake]="getTotalCupcake()"
+[bakedGoods]="getTotalBakedGoods()"
+[seasonalOffers]="getTotalSeasonalOffers()"
+(filterRadioButtonSelection)="onFilterRadioButtonChange($event)"></app-filter>
+
+
+  <div class="card container">
 <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-  <div class="col" *ngFor="let product of products">
+  <ng-container *ngFor="let product of products">
+  <div class="col"
+  *ngIf="productCountRadioButton === 'All' || productCountRadioButton === product.Type ">
     <div class="card mb-4 rounded-3 shadow-sm">
       <div class="card-header py-3">
         <h4 class="my-0 fw-normal">{{product.Name}}</h4>
@@ -14,12 +26,10 @@
         <img src="{{product.imageUrl}}" alt="{{product.Name}}">
         <ul class="list-unstyled mt-3 mb-4">
           <li>{{product.Description}}</li>
-          <li>Php {{product.Price}}</li>
+          <li>Price: Php {{product.Price}}</li>
         </ul>
         <button type="button" class="w-100 btn btn-lg btn-outline-primary">Purchase</button>
       </div>
     </div>
   </div>
-</div>
-</div>
-</body>
+</ng-container>

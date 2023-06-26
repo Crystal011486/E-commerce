@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MockDataService } from './mock-data.service';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { SearchComponent } from './search/search.component';
+import { FilterComponent } from './filter/filter.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     HomeComponent,
     FooterComponent,
     AboutUsComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    SearchComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [MockDataService],
   bootstrap: [AppComponent]
