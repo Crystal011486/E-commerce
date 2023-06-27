@@ -5,6 +5,11 @@ import { ProductsComponent } from './products/products.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { CakeGalleryComponent } from './cake-gallery/cake-gallery.component';
+import { CupcakeGalleryComponent } from './cupcake-gallery/cupcake-gallery.component';
+import { SeasonalOfferGalleryComponent } from './seasonal-offer-gallery/seasonal-offer-gallery.component';
+import { BakedGoodsGalleryComponent } from './baked-goods-gallery/baked-goods-gallery.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/landing-page', pathMatch: 'full'},
@@ -12,6 +17,14 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'about-us', component: AboutUsComponent},
+<<<<<<< HEAD
+=======
+  {path: 'gallery', component: GalleryComponent},
+  {path: 'cake-gallery', component: CakeGalleryComponent},
+  {path: 'cupcake-gallery', component: CupcakeGalleryComponent},
+  {path: 'seasonal-offer-gallery', component: SeasonalOfferGalleryComponent},
+  {path: 'baked-goods-gallery', component: BakedGoodsGalleryComponent},
+>>>>>>> d1c29c295c1f78d6b13e2cd559eac025e55b9a1d
   {path: '**', component: ErrorPageComponent},
 
 ];

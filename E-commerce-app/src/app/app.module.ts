@@ -11,9 +11,14 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MockDataService } from './mock-data.service';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { SearchComponent } from './search/search.component';
 import { FilterComponent } from './filter/filter.component';
 import { FormsModule } from '@angular/forms';
+import { GalleryComponent } from './gallery/gallery.component';
+import { CakeGalleryComponent } from './cake-gallery/cake-gallery.component';
+import { CupcakeGalleryComponent } from './cupcake-gallery/cupcake-gallery.component';
+import { SeasonalOfferGalleryComponent } from './seasonal-offer-gallery/seasonal-offer-gallery.component';
+import { BakedGoodsGalleryComponent } from './baked-goods-gallery/baked-goods-gallery.component';
+import { CakeImageService } from './cake-image.service';
 
 @NgModule({
   declarations: [
@@ -26,15 +31,19 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     AboutUsComponent,
     ErrorPageComponent,
-    SearchComponent,
-    FilterComponent
+    FilterComponent,
+    GalleryComponent,
+    CakeGalleryComponent,
+    CupcakeGalleryComponent,
+    SeasonalOfferGalleryComponent,
+    BakedGoodsGalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [MockDataService],
+  providers: [MockDataService, CakeImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

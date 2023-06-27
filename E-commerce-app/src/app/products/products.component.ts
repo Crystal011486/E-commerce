@@ -38,13 +38,17 @@ export class ProductsComponent {
     return this.products.filter(products => products.Type === 'Seasonal offers').length;
   }
 
-  //displays products from selected radio button//
   productCountRadioButton: string = 'All';
+  searchText: string = '';
 
+
+//displays products from selected radio button//
   onFilterRadioButtonChange(data: string) {
     this.productCountRadioButton = data;
     //console.log (this.productCountRadioButton );//
   }
+}
 
-  }
+
+
 
