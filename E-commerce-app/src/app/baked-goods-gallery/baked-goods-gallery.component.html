@@ -1,1 +1,18 @@
-<p>baked-goods-gallery works!</p>
+<body>
+  <div class="gallery-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal text-body-emphasis">Baked Goods Gallery</h1>
+    <p class="fs-5 text-body-secondary">
+      Here's are some of the seasonal product offerings that we have offered our customers.
+      You can take a look and decide or you can have you cake customized as you like
+      just pitch us your cake design idea.  </p>
+  </div>
+<br>
+  <div class="lightbox">
+    <div class="row">
+      <div class="col-lg-4 col-lg-4 col-lg-4" *ngFor="let good of goods" >
+        <img
+          src="{{good.imageUrl}}"
+          alt="{{good.Name}}"
+          class="w-100"
+        />
+      </div>

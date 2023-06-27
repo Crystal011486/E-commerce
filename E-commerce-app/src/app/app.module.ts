@@ -22,6 +22,7 @@ import { CakeImageService } from './cake-image.service';
 import { CupcakeImageService } from './cupcake-image.service';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { SeasonalImageService } from './seasonal-image.service';
+import { BakedGoodsImageService } from './baked-goods-image.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { SeasonalImageService } from './seasonal-image.service';
     ContactUsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [MockDataService, CakeImageService, CupcakeImageService, SeasonalImageService],
+  providers: [MockDataService, CakeImageService, CupcakeImageService, SeasonalImageService, BakedGoodsImageService],
 
   bootstrap: [AppComponent],
 })
