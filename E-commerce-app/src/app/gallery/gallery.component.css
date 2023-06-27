@@ -1,9 +1,14 @@
-.body {
+body {
+  background-color: #0d9ba3;
+}
+
+div.container{
   background-color: #0d9ba3;
 }
 
 .gallery-3{
   background-color: #f5dfa1;
+  margin-bottom: 20px;
 }
 
 div.gallery {
@@ -11,10 +16,12 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 300px;
+
 }
 
 div.gallery:hover {
   border: 1px solid #777;
+
 }
 
 div.gallery img {
@@ -25,4 +32,5 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+
 }
