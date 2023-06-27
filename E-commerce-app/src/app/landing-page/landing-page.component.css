@@ -13,6 +13,7 @@ img {
 h1
 {
   font-family: 'Playfair Display', serif, Georgia, 'Times New Roman', Times, serif;
+  color: black;
 }
 
 .image-container {
