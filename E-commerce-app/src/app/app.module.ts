@@ -19,6 +19,7 @@ import { CupcakeGalleryComponent } from './cupcake-gallery/cupcake-gallery.compo
 import { SeasonalOfferGalleryComponent } from './seasonal-offer-gallery/seasonal-offer-gallery.component';
 import { BakedGoodsGalleryComponent } from './baked-goods-gallery/baked-goods-gallery.component';
 import { CakeImageService } from './cake-image.service';
+import { CupcakeImageService } from './cupcake-image.service';
 
 @NgModule({
   declarations: [
@@ -36,14 +37,11 @@ import { CakeImageService } from './cake-image.service';
     CakeGalleryComponent,
     CupcakeGalleryComponent,
     SeasonalOfferGalleryComponent,
-    BakedGoodsGalleryComponent
+    BakedGoodsGalleryComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [MockDataService, CakeImageService],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  providers: [MockDataService, CakeImageService, CupcakeImageService],
+
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
