@@ -1,0 +1,21 @@
+.card {
+  margin-left: 250px;
+  height: auto;
+}
+.card-title{
+  text-align: center;
+}
+.card-text{
+text-align: center;
+}
+p{
+  text-align: center;
+}
+h5{
+  text-align: center;
+}
+.btn{
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
