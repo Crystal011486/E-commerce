@@ -12,8 +12,6 @@ export class CakeGalleryComponent {
 
   ngOnInit() {
     this.cakes = this.CakeImageService.getCakeImages();
-   console.log(this.cakes);
-
-
+   //console.log(this.cakes);
   }
 }

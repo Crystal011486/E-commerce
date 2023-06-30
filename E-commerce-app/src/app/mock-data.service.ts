@@ -109,6 +109,7 @@ export class MockDataService {
       },
     ]
 
+    //fetch products//
     getProducts(): any[] {
       return this.products;
     }

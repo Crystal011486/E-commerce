@@ -29,7 +29,7 @@
           <li>{{product.Description}}</li>
           <li>Price: Php {{product.Price}}</li>
         </ul>
-        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Purchase</button>
+        <button type="button" class="w-100 btn btn-lg btn-outline-primary" routerLink="/purchase/{{product.id}}" (click)="selectProduct(product.id)">Purchase</button>
       </div>
     </div>
   </div>

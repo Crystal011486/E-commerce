@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { MockDataService } from '../mock-data.service';
 import { CartService } from '../cart.service';
 
@@ -15,7 +15,10 @@ export class ProductsComponent {
 //fetch data from mock data service//
   ngOnInit() {
     this.products = this.mockDataService.getProducts();
-    console.log (this.products)
+   // this.selectedProduct = this.mockDataService.getProductsById(4);
+    console.log (this.products);
+   // console.log (this.selectedProduct);
+
   }
 //displays number of items per categories in filter radio button//
   getTotalProducts() {
@@ -46,6 +49,17 @@ export class ProductsComponent {
   onFilterRadioButtonChange(data: string) {
     this.productCountRadioButton = data;
     //console.log (this.productCountRadioButton );//
+  }
+
+  selectProduct(id:number) {
+    this.selectedProduct = this.mockDataService.getProductsById(id);
+    console.log(this.selectedProduct);
+  }
+
+  addToCart(product:any) {
+    this.cartService.addToCart(product);
+    console.log(product);
+    window.alert('Your product has been added to the cart!');
   }
 }
 

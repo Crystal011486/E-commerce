@@ -1,0 +1,17 @@
+body {
+  background-color: cadetblue;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  img {
+    height: auto;
+    width: 500px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
