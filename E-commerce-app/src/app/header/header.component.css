@@ -19,7 +19,7 @@ nav ul li {
 }
 
 nav ul li a {
-  
+
   display: block;
   color: rgb(35, 72, 35);
   text-align: center;
@@ -37,7 +37,7 @@ img {
   padding-top: 2px ;
   padding-bottom: 1px;
   width: 153px;
-  float: right;
+  
 }
 
 svg{
