@@ -17,14 +17,11 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'about-us', component: AboutUsComponent},
-<<<<<<< HEAD
-=======
   {path: 'gallery', component: GalleryComponent},
   {path: 'cake-gallery', component: CakeGalleryComponent},
   {path: 'cupcake-gallery', component: CupcakeGalleryComponent},
   {path: 'seasonal-offer-gallery', component: SeasonalOfferGalleryComponent},
   {path: 'baked-goods-gallery', component: BakedGoodsGalleryComponent},
->>>>>>> d1c29c295c1f78d6b13e2cd559eac025e55b9a1d
   {path: '**', component: ErrorPageComponent},
 
 ];
