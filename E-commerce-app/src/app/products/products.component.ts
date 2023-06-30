@@ -17,7 +17,6 @@ export class ProductsComponent {
     this.products = this.mockDataService.getProducts();
    // this.selectedProduct = this.mockDataService.getProductsById(4);
     console.log (this.products);
-   // console.log (this.selectedProduct);
 
   }
 //displays number of items per categories in filter radio button//
