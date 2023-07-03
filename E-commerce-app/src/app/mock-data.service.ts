@@ -34,7 +34,8 @@ export class MockDataService {
 
       { id:4,
       Name: 'Chocolate Cupcakes',
-      Description: '12 pcs. custom chocolate cupcakes. Moist and soft chocolate cupcakes topped with vanilla buttercream frosting',
+      Description1: '12 pcs. custom chocolate cupcakes topped with vanilla buttercream frosting',
+      Description2: 'Moist and soft chocolate cupcakes that is bursting with rich, chocolaty flavor',
       Price: '380.00',
       imageUrl:'/assets/images/cupcakes/chocolate-cupcakes.jpg',
       Type: 'Cupcake'
@@ -42,7 +43,8 @@ export class MockDataService {
 
       {id: 5,
       Name: 'Cookies and Cream Cupcakes',
-      Description: '12 pcs. custom cookies and cream cupcakes. Moist and fluffy cookies and cream cupcakes. We used crumbs Oreo cookies for the cupcake and topped with vanilla buttercream frosting',
+      Description1: '12 pcs. custom cookies and cream cupcakes topped with vanilla buttercream frosting',
+      Description2: ' Soft and fluffy cookies and cream cupcakes. We used pieces of Oreo cookies for the cupcake for the cookies and cream taste.',
       Price: '380.00',
       imageUrl:'/assets/images/cupcakes/cookiesandcream-cupcakes.jpg',
       Type:'Cupcake'
@@ -50,7 +52,8 @@ export class MockDataService {
 
       {id: 6,
       Name: 'Red velvet cupcake',
-      Description: '12 pcs. custom red velvet cupcakes. Moist and fluffy red velvet cupcakes with vanilla buttercream frosting',
+      Description1: '12 pcs. custom red velvet cupcakes with vanilla buttercream frosting',
+      Description2: 'Unworldly moist, very buttery, full of vanilla flavor with a hint of chocolate goodness. That is our fluffy and moist red velvet cupcakes.',
       Price: '380.00',
       imageUrl:'/assets/images/cupcakes/redvelvet-cupcakes.jpg',
       Type:'Cupcake'
@@ -58,7 +61,8 @@ export class MockDataService {
 
       {id:7,
       Name: 'Double Chocolate Brownies',
-      Description: '4pcs. per pack double chocolate brownies. Fudgy brownies with chocolate chunks inside.',
+      Description1: '4pcs. per pack double chocolate brownies with chocolate chunks inside.',
+      Description2:'Fudgy cocoa brownies with just the right amount of sweetness with deep, bittersweet chocolate flavor from the chocoalte chunks.',
       Price: '140.00',
       imageUrl:'/assets/images/baked-goods/brownies.jpg',
       Type:'Baked Goods'
@@ -66,7 +70,8 @@ export class MockDataService {
 
       {id:8,
       Name: 'Chocolate Crinkles',
-      Description: '10 pcs. per pack chocolate crinkles. Crispy on the outside and soft on the inside chocolate crinkles drenched in powdered sugar.',
+      Description1: '10 pcs. per pack chocolate crinkles. Soft & fudge-like cookies in powdered sugar.',
+      Description2: 'Decadently rich and chocolatey cookie with a melt-in-your mouth fudgy softness. Crispy on the outside and soft on the inside chocolate crinkles.',
       Price: '120.00',
       imageUrl:'/assets/images/baked-goods/choco-crinkles.jpg',
       Type: 'Baked Goods'
@@ -74,7 +79,8 @@ export class MockDataService {
 
       {id:9,
       Name: 'Chocolate Chip Cookies',
-      Description: '5 pcs. per pack chocolate chip cookies. Crunchy cookies with chocolate chips inside.',
+      Description1: '5 pcs. per pack chocolate chip cookies. Crunchy cookies with chocolate chips inside.',
+      Description2: 'Soft and chewy with crisp edges and chewy middles. Full of sweet butterscotch & chocolate flavors. Perfect to pair with warm glass of milk.',
       Price: '100.00',
       imageUrl:'/assets/images/baked-goods/chocochip-cookies.jpg',
       Type:'Baked Goods'
@@ -82,23 +88,26 @@ export class MockDataService {
 
       {id:10,
       Name: 'Cupcake Bouquet',
-      Description: '7 pcs. chocolate cupcakes with flower designed vaniila buttercream frosting arranged as a bouquet.',
+      Description1: '7 pcs. flower designed chocolate cupcakes arranged as a bouquet.',
+      Description2: 'Moist and chocolatey chocolate cupcakes made from several different hand piped buttercream icing flowers to create a realistic bouquet look.',
       Price: '650.00',
       imageUrl:'/assets/images/seasonal/cupcake-bouquet.jpg',
       Type:'Seasonal offers'
       },
 
       {id:11,
-      Name: 'Christmas  Mini Cakes',
-      Description: '5 inches Christmas themed moist chocolate with vanilla buttercream frosting cakes.',
+      Name: 'Christmas Mini Cakes',
+      Description1: '5 inches Christmas themed moist chocolate with vanilla buttercream frosting cakes.',
+      Description2: 'A Mini version of our popular chocolate cake. Moist chocolate cake with christmas buttercream icing design for a holiday vibe.',
       Price: '300.00',
       imageUrl:'/assets/images/seasonal/xmascake.jpg',
       Type:'Seasonal offers'
       },
 
       {id:12,
-      Name: 'Bento Cake & Cupcake Package',
-      Description: '4 inch custom moist chocolate cake with 8 pcs custom chocolate cupcakes both with vanilla buttercream frosting.',
+      Name: 'Bento Cake Package',
+      Description1: '4 inch custom moist chocolate cake with 8 pcs custom chocolate cupcakes.',
+      Description2: 'A collection of chocolate mini cake and chocolate cupcakes in one box. And can be customized to your liking and any occasion that calls for it.',
       Price: '1000.00',
       imageUrl:'/assets/images/seasonal/bento-package.jpg',
       Type:'Seasonal offers'
@@ -106,7 +115,8 @@ export class MockDataService {
 
       {id:13,
       Name: 'Valentine Mini Heart Cake',
-      Description: '5 inch heart shaped moist chocolate cake with vanilla buttercream frosting',
+      Description1: '5 inch heart shaped moist chocolate cake with vanilla buttercream frosting',
+      Description2: 'A Mini version of our popular chocolate cake in a heart shape. Frosted and designed to fit valentines day theme perfect for your love ones.  ',
       Price: '300.00',
       imageUrl:'/assets/images/seasonal/miniheart-cake.jpg',
       Type:'Seasonal offers'
@@ -125,6 +135,6 @@ export class MockDataService {
 
     getProductDetails(product:any) {
       this.productDetails=product;
-      console.log(this.productDetails);
+      //console.log(this.productDetails);
     }
   }

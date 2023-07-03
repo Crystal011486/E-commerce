@@ -12,6 +12,7 @@ import { SeasonalOfferGalleryComponent } from './seasonal-offer-gallery/seasonal
 import { BakedGoodsGalleryComponent } from './baked-goods-gallery/baked-goods-gallery.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PurchaseComponent } from './purchase/purchase.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/landing-page', pathMatch: 'full'},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'purchase/:id', component: PurchaseComponent},
-  {path: 'cart', component: PurchaseComponent},
+  {path: 'product-details', component: PurchaseComponent},
+  {path: 'cart', component: CartComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: 'contact-us', component: ContactUsComponent},
   {path: 'gallery', component: GalleryComponent},

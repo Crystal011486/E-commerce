@@ -13,6 +13,7 @@ export class PurchaseComponent implements OnInit {
   products: any [] = [];
   selectedProduct : any;
   FoundProduct: any;
+  cartItem: any;
 
 
   constructor(
@@ -35,6 +36,12 @@ export class PurchaseComponent implements OnInit {
   getProducts(){
     this.products = this.mockDataService.getProducts();
   }
+  addToCart(cartItem: any) {
+    this.cartItem=this.FoundProduct.push(this.FoundProduct);
+
+    console.log(this.cartItem);
+  }
+
 
 
 }
