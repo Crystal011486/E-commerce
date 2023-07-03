@@ -34,7 +34,7 @@ export class PurchaseComponent implements OnInit {
   getProducts(){
     this.products = this.mockDataService.getProducts();
   }
-  addToCart(item: any) {
+  addToCart(cartItem: any) {
     this.cartItem=this.FoundProduct.push(this.FoundProduct);
 
     console.log(this.cartItem);

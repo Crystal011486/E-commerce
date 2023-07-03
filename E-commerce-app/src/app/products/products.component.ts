@@ -16,7 +16,7 @@ export class ProductsComponent {
   ngOnInit() {
     this.products = this.mockDataService.getProducts();
    // this.selectedProduct = this.mockDataService.getProductsById(4);
-    console.log (this.products);
+   // console.log (this.products);
 
   }
 //displays number of items per categories in filter radio button//
@@ -52,14 +52,8 @@ export class ProductsComponent {
 
   selectProduct(id:number) {
     this.selectedProduct = this.mockDataService.getProductsById(id);
-    console.log(this.selectedProduct);
+   // console.log(this.selectedProduct);
     this.mockDataService.getProductDetails(this.selectedProduct);
-  }
-
-  addToCart(product:any) {
-    this.cartService.addToCart(product);
-    console.log(product);
-    window.alert('Your product has been added to the cart!');
   }
 }
 

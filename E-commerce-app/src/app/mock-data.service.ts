@@ -135,6 +135,6 @@ export class MockDataService {
 
     getProductDetails(product:any) {
       this.productDetails=product;
-      console.log(this.productDetails);
+      //console.log(this.productDetails);
     }
   }
