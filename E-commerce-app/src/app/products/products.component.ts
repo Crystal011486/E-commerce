@@ -8,8 +8,8 @@ import { CartService } from '../cart.service';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-  @Input()products: any[] = [];
-  @Input()selectedProduct: any;
+  products: any[] = [];
+  selectedProduct: any;
 
   constructor (private mockDataService: MockDataService, private cartService: CartService) {}
 //fetch data from mock data service//
