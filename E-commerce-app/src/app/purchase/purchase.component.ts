@@ -18,22 +18,20 @@ export class PurchaseComponent implements OnInit {
   constructor(
     private activeRoute:ActivatedRoute,
     private mockDataService:MockDataService,
-    private cartService:CartService,) {}
+    private cartService:CartService,
+    private routers: Router) {}
 
   ngOnInit() {
-    this.products = this.mockDataService.getProducts();
+    this.getProducts();
     console.log (this.products);
     //console.log (this.selectedProduct);
    //console.log(id);
+   this.FoundProduct=this.mockDataService.productDetails;
+   //console.log(this.FoundProduct);
   }
 
   getProducts(){
     this.products = this.mockDataService.getProducts();
-  }
-
-  getSelectedProduct(id:number) {
-    this.selectedProduct = this.mockDataService.getProductsById(id)
-    console.log(this.selectedProduct);
   }
 
 

@@ -2,11 +2,13 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class MockDataService {
+  productDetails: any;
   private products: any[] = [
 
       { id:1,
       Name: 'Chocolate Cake',
-      Description: '8 inches custom chocolate cake. Moist and fluffy chocolate cake with vanilla buttercream frosting',
+      Description1: '8 inches custom chocolate cake  with vanilla buttercream frosting.',
+      Description2:'Moist and fluffy chocolate cake with just the right amount of sweetness. A chocolatey cake that is wonderfully met with a sweet, mild vanilla filling or frosting',
       Price: '900.00',
       imageUrl:'/assets/images/cakes/chocolate-cake.jpg',
       Type:'Cake'
@@ -14,7 +16,8 @@ export class MockDataService {
 
       {id: 2,
       Name: 'Carrot Cake',
-      Description: '8 inches custom carrot cake. Moist spiced and sweet carrot cake with creamcheese frosting',
+      Description1: '8 inches custom carrot cake with creamcheese frosting.',
+      Description2:'Sweet and moist spiced cake, full of carrots and toasted nut, and covered with creamcheese frosting',
       Price: '900.00',
       imageUrl:'/assets/images/cakes/carrot-cake.jpg',
       Type:'Cake'
@@ -22,7 +25,8 @@ export class MockDataService {
 
       {id: 3,
       Name: 'Red Velvet Cake',
-      Description: '8 inches custom red velvet cake. Moist, fluffy with a mild cocoa taste is what our red velvet cake is with vanilla buttercream frosting',
+      Description1: '8 inches custom red velvet cake with vanilla buttercream frosting.',
+      Description2: 'Moist, fluffy with a mild cocoa taste is what our red velvet cake is. Smooth, soft, tender and light with creamy icing.',
       Price: '900.00',
       imageUrl:'/assets/images/cakes/redvelvet-cake.jpg',
       Type: 'Cake'
@@ -109,6 +113,7 @@ export class MockDataService {
       },
     ]
 
+
     //fetch products//
     getProducts(): any[] {
       return this.products;
@@ -116,5 +121,10 @@ export class MockDataService {
 
     getProductsById(id:number): any {
       return this.products.find(item => item.id == id);
+    }
+
+    getProductDetails(product:any) {
+      this.productDetails=product;
+      console.log(this.productDetails);
     }
   }

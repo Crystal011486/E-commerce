@@ -1,13 +1,15 @@
-
+<body>
 <div class="container">
   <div class="row">
     <div class="col-6">
 <div class="card" style="width: 500px;" >
   <h2 class="card-title">Product Details</h2>
   <div class="card-body">
-    <img src="" class="card-img-top" alt="">
-    <p> Description</p>
-    <h5> Price:</h5>
+    <img src="{{FoundProduct.imageUrl}}" class="card-img-top" alt="">
+    <h3>{{FoundProduct.Name}}</h3>
+    <p> {{FoundProduct.Description1}}</p>
+    <p>{{FoundProduct.Description2}}</p>
+    <h5> Price:{{FoundProduct.Price}}</h5>
     <a routerLink="/cart" class="btn btn-primary" >Add to Cart</a>
     <a href="/products" class="btn btn-primary" id="back">Back</a>
   </div>
@@ -15,3 +17,4 @@
 </div>
 </div>
 </div>
+</body>

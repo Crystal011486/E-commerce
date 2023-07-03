@@ -8,8 +8,8 @@ import { CartService } from '../cart.service';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-  products: any[] = [];
-  selectedProduct: any;
+  @Input()products: any[] = [];
+  @Input()selectedProduct: any;
 
   constructor (private mockDataService: MockDataService, private cartService: CartService) {}
 //fetch data from mock data service//
@@ -53,6 +53,7 @@ export class ProductsComponent {
   selectProduct(id:number) {
     this.selectedProduct = this.mockDataService.getProductsById(id);
     console.log(this.selectedProduct);
+    this.mockDataService.getProductDetails(this.selectedProduct);
   }
 
   addToCart(product:any) {

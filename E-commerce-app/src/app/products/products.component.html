@@ -26,8 +26,8 @@
       <div class="card-body" >
         <img src="{{product.imageUrl}}" alt="{{product.Name}}">
         <ul class="list-unstyled mt-3 mb-4">
-          <li>{{product.Description}}</li>
-          <li>Price: Php {{product.Price}}</li>
+          <li>{{product.Description1}}</li>
+          <h5><strong>Php {{product.Price}}</strong></h5>
         </ul>
         <button type="button" class="w-100 btn btn-lg btn-outline-primary" routerLink="/purchase/{{product.id}}" (click)="selectProduct(product.id)">Purchase</button>
       </div>
