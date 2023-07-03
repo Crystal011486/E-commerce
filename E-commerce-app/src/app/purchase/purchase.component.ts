@@ -27,6 +27,8 @@ export class PurchaseComponent implements OnInit {
     //console.log (this.selectedProduct);
    //console.log(id);
    this.FoundProduct=this.mockDataService.productDetails;
+   return this.FoundProduct;
+   console.log(this.FoundProduct);
    //console.log(this.FoundProduct);
   }
 
