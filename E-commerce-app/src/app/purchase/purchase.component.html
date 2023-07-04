@@ -9,8 +9,8 @@
     <h3>{{FoundProduct.Name}}</h3>
     <p> {{FoundProduct.Description1}}</p>
     <p>{{FoundProduct.Description2}}</p>
-    <h5> Price:{{FoundProduct.Price}}</h5>
-    <a routerLink="/cart" class="btn btn-warning" (click)="addToCart(FoundProduct)" >Add to Cart</a>
+    <h5> Price: Php{{FoundProduct.Price}}</h5>
+    <a routerLink="/cart" class="btn btn-warning" (click)="addToCart()" >Add to Cart</a>
     <a routerLink="/products" class="btn btn-warning" id="back">Back</a>
   </div>
 </div>

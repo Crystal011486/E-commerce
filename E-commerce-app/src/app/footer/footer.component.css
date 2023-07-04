@@ -37,4 +37,6 @@ img {
   background: #cf1eae;
   color: white;
 }
-
+a.text-reset:hover {
+   color: #FBBC14;
+  }

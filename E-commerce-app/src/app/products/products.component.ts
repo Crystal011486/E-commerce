@@ -52,8 +52,12 @@ export class ProductsComponent {
 
   selectProduct(id:number) {
     this.selectedProduct = this.mockDataService.getProductsById(id);
+<<<<<<< HEAD
     //console.log(this.selectedProduct);
    // console.log(this.selectedProduct);
+=======
+    console.log(this.selectedProduct);
+>>>>>>> leader
     this.mockDataService.getProductDetails(this.selectedProduct);
   }
 }
