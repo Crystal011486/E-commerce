@@ -1,20 +1,26 @@
+<body>
 <div class="container">
 <table class="table table-responsive">
   <thead>
-    <tr class="warning">
+    <tr id="head">
       <th>Product Image</th>
       <th>Name</th>
       <th>Description</th>
       <th>Price</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>John</td>
-      <td>Doe</td>
-      <td>john@example.com</td>
-      <td>john@example.com</td>
+    <tr *ngFor="let cart of cartArray">
+      <td id="image"><img src="{{cart.imageUrl}}"></td>
+      <td id="name">{{cart.Name}}</td>
+      <td id="description">{{cart.Description1}}</td>
+      <td id="price">Php {{cart.Price}}</td>
+      <td> <button class="w-75 btn btn-lg btn-outline-warning" (click)="deleteItem(cart)"> Remove Item</button></td>
     </tr>
   </tbody>
 </table>
+<h5>Total: Php{{Totalpurchase}}</h5>
+<button routerLink="/products" class="w-25 btn btn-lg btn-outline-warning">Add more items</button>
 </div>
+</body>

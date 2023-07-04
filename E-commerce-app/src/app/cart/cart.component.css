@@ -7,3 +7,28 @@ thead{
   border-style: solid;
 
 }
+img{
+  width: 150px;
+}
+.head{
+  text-align: center;
+}
+
+body{
+  background-color: cadetblue;
+}
+.btn {
+  font-size:small;
+  margin-top: 20px;
+}
+.name {
+  padding-top: 100px;
+}
+h5{
+  margin-left: 800px;
+}
+.btn.w-25{
+  margin-bottom: 20px;
+
+}
+

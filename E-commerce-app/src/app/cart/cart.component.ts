@@ -6,29 +6,38 @@ import { MockDataService } from '../mock-data.service';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
- cartItem: any;
+  cartItem: any;
+  cartArray: any[] = [];
+  Totalpurchase: any;
 
-  constructor (
+  constructor(
     private activeRoute: ActivatedRoute,
     private mockDataService: MockDataService,
     private cartService: CartService,
     private routers: Router
   ) {}
 
-ngOnInit () {
-this.cartItem = this.mockDataService.productDetails;
-console.log(this.cartItem);
-}
-addToCart(product:any) {
-  this.cartService.addToCart(product);
-  console.log(product);
-  window.alert('Your product has been added to the cart!');
-}
+  ngOnInit() {
+    //console.log(this.cartArray);
+    //console.log(this.cartItem);
+    //updates cart Array for changes in Cartlist
+      this.mockDataService.getCartList().subscribe((item) => {
+      this.cartArray = item;
+      this.Totalpurchase = this.mockDataService.getTotalPrice();
+    });
+  }
+  //addToCart(cartItem:any) {
+  // this.cartService.addToCart(this.cartItem);
+  //console.log(this.cartItem);
 
+  deleteItem(product: any) {
+    this.mockDataService.removeCartItem(product);
+  }
 
-
-
+  clearCart() {
+    this.cartArray = [];
+  }
 }
