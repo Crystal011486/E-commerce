@@ -37,11 +37,17 @@ img {
   padding-top: 2px ;
   padding-bottom: 1px;
   width: 153px;
-  
-}
 
+}
+button{
+  margin-top: 4px;
+  margin-right: 10px;
+  float: right;
+  background-color: #FBBC14 !important;
+  outline: none !important; box-shadow: none !important;
+}
 svg{
   margin-right: 25px;
   margin-top: 17px;
-  float: right;
+
 }

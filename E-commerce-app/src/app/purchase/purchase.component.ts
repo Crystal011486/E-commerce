@@ -24,7 +24,7 @@ export class PurchaseComponent implements OnInit {
 
   ngOnInit() {
     this.getProducts();
-    console.log (this.products);
+   // console.log (this.products);
     //console.log (this.selectedProduct);
    //console.log(id);
    this.FoundProduct=this.mockDataService.productDetails;
@@ -38,7 +38,7 @@ export class PurchaseComponent implements OnInit {
     window.alert('Your product has been added to the cart!');
     this.mockDataService.getCartItem(this.FoundProduct);
     //this.cartItem=this.FoundProduct.push(this.FoundProduct);
-    console.log(this.FoundProduct)
+   // console.log(this.FoundProduct)
    // console.log(this.cartItem);
   }
 }

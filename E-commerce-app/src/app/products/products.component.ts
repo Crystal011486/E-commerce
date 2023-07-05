@@ -52,7 +52,7 @@ export class ProductsComponent {
 
   selectProduct(id:number) {
     this.selectedProduct = this.mockDataService.getProductsById(id);
-    console.log(this.selectedProduct);
+   // console.log(this.selectedProduct);
     this.mockDataService.getProductDetails(this.selectedProduct);
   }
 }

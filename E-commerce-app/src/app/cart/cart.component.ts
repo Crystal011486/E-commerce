@@ -27,6 +27,7 @@ export class CartComponent {
       this.mockDataService.getCartList().subscribe((item) => {
       this.cartArray = item;
       this.Totalpurchase = this.mockDataService.getTotalPrice();
+      this.mockDataService.getCartItemCount();
     });
   }
   //addToCart(cartItem:any) {
