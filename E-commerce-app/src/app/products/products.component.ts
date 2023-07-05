@@ -55,6 +55,7 @@ export class ProductsComponent {
     //console.log(this.selectedProduct);
    // console.log(this.selectedProduct);
     console.log(this.selectedProduct);
+   // console.log(this.selectedProduct);
     this.mockDataService.getProductDetails(this.selectedProduct);
   }
 }

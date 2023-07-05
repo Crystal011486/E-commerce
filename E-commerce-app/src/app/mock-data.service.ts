@@ -134,7 +134,7 @@ export class MockDataService {
     getProducts(): any[] {
       return this.products;
     }
-  
+
 
     getProductsById(id:number): any {
       return this.products.find(item => item.id == id);
@@ -159,14 +159,14 @@ export class MockDataService {
     if (index !==-1) {
       this.products.splice(index,1);
     }
-    console.log(id);
+   // console.log(id);
    }
 
    getTotalPrice(){
     let Total = 0;
     this.cartItem.map((item) => {
       Total += item.Price;
-      console.log(Total);
+    //  console.log(Total);
     })
     return Total;
    }
@@ -177,5 +177,10 @@ export class MockDataService {
       }
     })
     this.cartList.next(this.cartItem);
+   }
+
+   getCartItemCount() {
+    return this.cartItem.length;
+   // console.log(this.cartItem.length)
    }
   }
