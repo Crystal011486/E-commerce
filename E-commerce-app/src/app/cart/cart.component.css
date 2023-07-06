@@ -24,11 +24,20 @@ body{
 .name {
   padding-top: 100px;
 }
-h5{
+
+.card{
   margin-left: 800px;
+  margin-bottom: 20px;
+}
+
+.card-body{
+  margin-bottom: 20px !important;
 }
 .btn.w-25{
   margin-bottom: 20px;
-
+}
+.div.row {
+  width: 500px;
+  height: 500px;
 }
 

@@ -20,7 +20,14 @@
     </tr>
   </tbody>
 </table>
-<h5>Total: Php{{Totalpurchase}}</h5>
 <button routerLink="/products" class="w-25 btn btn-lg btn-outline-warning">Add more items</button>
 </div>
-</body>
+<div class="card w-25">
+  <div class="card-body">
+    <h4 class="card-title">Summary</h4>
+    <p class="card-text">Amount: Php{{Totalpurchase}}</p>
+    <p class="card-text">Delivery: Php 150</p>
+    <h4 class="card-text">Total: Php{{Totalpurchase + 150}}</h4>
+    <a routerLink="/checkout" class="w-50 btn btn-lg btn-primary"> Checkout</a>
+  </div>
+</div>
