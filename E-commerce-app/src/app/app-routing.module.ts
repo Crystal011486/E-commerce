@@ -13,6 +13,7 @@ import { BakedGoodsGalleryComponent } from './baked-goods-gallery/baked-goods-ga
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/landing-page', pathMatch: 'full'},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'purchase/:id', component: PurchaseComponent},
   {path: 'product-details', component: PurchaseComponent},
   {path: 'cart', component: CartComponent},
+  {path: 'checkout', component: CheckoutComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: 'contact-us', component: ContactUsComponent},
   {path: 'gallery', component: GalleryComponent},
